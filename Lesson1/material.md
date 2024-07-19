@@ -33,19 +33,24 @@ As a result of the lesson, you’ll draw a first letter of your name in the air 
 
 ## Connect to Robot
 
+- If you have scheduled lesson with our Spot, connect via app.merklebot.com platform as described in [connection section of course readme](../readme.md#play-with-our-robot).
+We will take care of E-Stop for this lesson.
+
+- If you have your own Spot, you should activate E-Stop by yourself. The easiest way to do it via Spot's tablet.
+Alternatively, check Lesson 2 E-stop section and try run E-Stop non-gui version from terminal. 
+
 ## Practice
 
-Now we will make a simple script for Spot for drawing on screen using its head movements. Copy the following to program file:
+Now we will make a simple script for Spot for drawing on screen using its head movements. Copy the following to program file (do not forget read through comments):
 
 ```python
 # Import Spot Control modules
 import bosdyn.client
-from bosdyn.client.robot_command import RobotCommandClient, blocking_stand
-from bosdyn.client.robot_command import RobotCommandBuilder
+from bosdyn.client.robot_command import RobotCommandClient, RobotCommandBuilder, blocking_stand
 from bosdyn.geometry import EulerZXY
 import time
 
-# ENTER YOUR AUTH DATA HERE (password will be giben to you by staff)
+# ENTER YOUR AUTH DATA HERE
 ROBOT_IP="192.168.80.3"
 SPOT_USERNAME="admin"
 SPOT_PASSWORD="2zqa8dgw7lor"
@@ -146,6 +151,7 @@ Create a Python script that controls robot’s body position with a sequence of 
 
 1. Stand-up
 2. Trace your initials with it's face (one letter, at least 3 points)
+    To do it, change coordinate tuples in code example 
 3. Sit down
 
 ## Results
@@ -153,8 +159,8 @@ Create a Python script that controls robot’s body position with a sequence of 
 Now, you know how to:
 
 - connect to the Spot
-- work with Spot SDK
-- construct a basic command
+- start to work with Spot SDK
+- construct a basic standing command
 - rotate robot body
 
 And even how to draw a letter. Congratulations!
