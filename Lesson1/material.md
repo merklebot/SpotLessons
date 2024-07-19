@@ -10,17 +10,23 @@ During this lesson, you will learn how to authorize yourself as a user, get moto
 As and all serious robots, Boston Dynamics Spot has a protection mechanism — [E-Stop service](https://dev.bostondynamics.com/docs/concepts/estop_service) (Emergency Stop) that should always be active during the operation of the spot to avoid potential physical damage. Turning on E-Stop instantly freezes all joints (this happens without turning off the engines if the robot was turned on).
 
 ### Access
-First of all, we should lease control over robot. There are two ways to do it — **acquire** or **take**. *Acquire* means asking for control in a gentle way, if anybody controls the robot now, your request will be declined. In another way, **take** means forcefully taking control, it doesn't matter if the current operator exists.
+First of all, we should lease control over robot. There are two ways to do it — **acquire** or **take**. **Acquire** means asking for control in a gentle way, if anybody controls the robot now, your request will be declined. On the other hand, **take** means forcefully taking control, it doesn't matter if the current operator exists.
+
+>[!IMPORTANT]  
+> Be careful. Forcefully taking control from other operator saves the robot state (standing, moving, etc.)  
 
 So, to make any movements, you should follow the scheme:
 
-![](assets/control_scheme.png)
-
+<p align="center">
+    <img src="assets/control_scheme.png" width="100">
+</p>
 
 In this lesson you will learn how to control robot rotation by changing its yaw, roll and pitch. In the picture bellow the body frame coordinate system is shown:
+<p align="center">
+    <img src="assets/spot_angular_coords.png" width="500">
+</p>
 
-![](assets/spot_angular_coords.png)
-
+> [!NOTE]
 > The angles in a code are represented in radians.
 
 As a result of the lesson, you’ll draw a first letter of your name in the air with Spot’s face. Let start the setup!
@@ -131,7 +137,8 @@ draw_letter(command_client, points_yaw_pitch_roll)
 robot.power_off(cut_immediately=False)
 ```
 
-> The limits of angles are recommended to be in limits of [-0.45, 0.45] for yaw, [-0.4, 0.4] for pitch and [-0.2, 0.2] for roll.
+> [!NOTE]
+> The limits of angles are recommended to be in limits of `[-0.45, 0.45]` for yaw, `[-0.4, 0.4]` for pitch and `[-0.2, 0.2]` for roll.
 
 ## Challange
 
