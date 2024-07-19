@@ -141,7 +141,7 @@ This service is critical for two reasons:
 Time synchronization is based on several measurements of request-response timestamps (`TimeSyncUpdateRequest`, `TimeSyncUpdateResponse`) . For application’s using Boston Dynamics Python SDK, it would be enough to use `TimeSyncThread`. For short-term scripts, it would be enough to synchronize time once, at the the start of control period.
 
 ## Connection
-    Check first lesson paragraph. But this time with 
+    Check first lesson paragraph. But this time with no E-Stop on our side!
 ## Practice
 
 1. Each of service's functions could be triggered from SDK with next scheme (authed `robot` could be copied from previous lesson):
