@@ -6,3 +6,9 @@
 - Lesson 4: Explore the world around you (TBD)
 - Lesson 5: Spot's mapping (TBD)
 - Lesson 6: Robot on duty: missions (TBD)
+
+## Play with our robot
+
+To access our robot, we propose you to schedule session here (TODO add link)
+
+Connection to robot's terminal are conducted through app.merklebot.com platform
