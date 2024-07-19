@@ -1,7 +1,7 @@
 # How to work with Spot from Boston Dynamics
 
 - [Lesson 1: Draw your name's first letter with robot's head](./Lesson1/material.md)
-- Lesson 2: Get to know your robot state
+- [Lesson 2: Get to know your robot state](./Lesson2/material.md)
 - Lesson 3: Make first steps
 - Lesson 4: Explore the world around you (TBD)
 - Lesson 5: Spot's mapping (TBD)
