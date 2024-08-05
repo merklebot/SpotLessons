@@ -7,6 +7,10 @@ Before
 
 ### Coordinate Frames
 
+<p align="center">
+    <img src="assets/spot_angular_coords.png" width="500">
+</p>
+
 Spot uses 3D transformations to describe itself, objects around it, and its understanding of the world. Spot has different frames to represent these objects. A 3D transformation is then used to describe a relationship between two frames using a translation vector and a rotation [quaternion](https://en.wikipedia.org/wiki/Quaternion). These transformations can be used to orient Spot in space and determine its location.
 
 These transformations are expressed in 3D space using the `x`, `y`, and `z` axes. A translation is a 3 element vector `(x, y, z)` describing the difference between two frames’ origins. A rotation is a quaternion `(w, x, y, z)` that describes the change between two frames’ coordinate axes orientations. In the API geometry, we use an [SE3](https://en.wikipedia.org/wiki/Euclidean_group)Pose which encapsulate the rotation of Spot's body and translation of it's center used for transformation.

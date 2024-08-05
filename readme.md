@@ -28,22 +28,27 @@ Connection to robot's terminal are conducted through app.merklebot.com platform:
 
 ## Play via agent's terminal
 1. Register at app.merklebot.com
-2. Join organization teacher share with you
-3. Install robot-agent with link in Robot's tab (robot-spot)
-4. Install robot-agent CLI with 
+2. Create Organization and open it
+3. Add robot in Robots tab, open it and share API key with teacher
+4. Create new Robot for your device
+5. Install robot-agent with command in robot description. It will look like:
+```bash
+curl -s https://app.merklebot.com/install.sh | bash -s YOUR_DEVICE_API_KEY
+```
+6. Install robot-agent CLI with 
 ```bash
 pip install rn-cli
 ```
-5. Add environmental variable AGENT_SOCKET_PATH with socket. By default it is:
+7. Add environmental variable AGENT_SOCKET_PATH with socket. By default it is:
 ```bash
 export AGENT_SOCKET_PATH=/merklebot.socket 
 ```
-6. Add job with spot container. Teacher will share json with you
+8. Add job with spot container. Teacher will share json with you
 ```bash
 rn jobs add JSON.json ROBOT_KEY
 ```
 
-6. Connect to terminal of robot
+9. Connect to terminal of robot
 ```bash
 rn jobs terminal ROBOT_KEY JOB_ID
 ```
