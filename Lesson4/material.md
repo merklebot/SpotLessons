@@ -64,7 +64,7 @@ from bosdyn.client.math_helpers import Quat, SE3Pose
 from bosdyn.client.robot_command import RobotCommandBuilder, RobotCommandClient, blocking_stand
 from bosdyn.client.robot_state import RobotStateClient
 ```
-1. Register `WorldObjectClient`
+1. Register `WorldObjectClient` and `RobotStateClient`
 2. Check the list of available world objects with `list_world_objects`. To filter only fiducials, use `object_type` param:
 ```python
 response = world_object_client.list_world_objects(object_type=[world_object_pb2.WORLD_OBJECT_APRILTAG])
@@ -109,7 +109,7 @@ def offset_tag_pose(object_rt_world, dist_margin=1.0):
     ])
     return goto_rt_world, heading
 
-
+robot_state = robot_state_client.get_robot_state()
 pose, heading = offset_tag_pose(fiducial_rt_world, 1)
 
 goal_x = pose[0]
