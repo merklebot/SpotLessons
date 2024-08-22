@@ -13,7 +13,7 @@ Schedule lesson [here](https://cal.com/greatestparrot/schedule-lesson-with-spot)
 ## Play with our robot
 
 Connection to robot's terminal are conducted through robot-agent (do not support Windows):
-1. Follow [instruction](https://hackmd.io/6CvIVFTUTaCNfF2ngdqjIA) and create robot entity for Spot
+1. Follow [instruction](https://github.com/otaberu/robot-agent) and create robot entity for Spot
 2. Share your public key and robot private one with teacher
 3. Launch Docker Job with next parameters:
    1. Docker image: `ghcr.io/merklebot/spot-lesson-image:master` 
