@@ -33,7 +33,7 @@ As a result of the lesson, you’ll draw a first letter of your name in the air 
 
 ## Connect to Robot
 
-- If you have scheduled lesson with our Spot, connect via app.merklebot.com platform as described in [connection section of course readme](../readme.md#play-with-our-robot).
+- If you have scheduled lesson with our Spot, check [connection section of course readme](../readme.md#play-with-our-robot).
 We will take care of E-Stop for this lesson.
 
 - If you have your own Spot, you should activate E-Stop by yourself. The easiest way to do it via Spot's tablet.
